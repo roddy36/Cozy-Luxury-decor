@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxury Decor Store</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&amp;family=DM+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <style>
+        :root { --gold: #c9a96e; --dark: #1a1a1a; --cream: #f8f5f0; }
+        body { font-family: 'DM Sans', sans-serif; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .product-card:hover { transform: translateY(-8px); }
+        .product-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .product-card:hover { box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
+        /* Elements animated by Motion start hidden; shown immediately if JS/Motion is unavailable */
+        .js .motion-fade { opacity: 0; }
+    </style>
+  <script>document.documentElement.classList.add('js');</script>
+  <!-- Motion (motion.dev) animation library -->
+  <script src="https://cdn.jsdelivr.net/npm/motion@10.18.0/dist/motion.min.js"></script>
+ </head>
+ <body class="min-h-screen" style="background: rgb(26, 26, 26);">
+  <header class="w-full">
+   <!-- Nav -->
+   <nav class="absolute top-0 left-0 right-0 z-10 flex items-center justify-between px-8 py-6">
+    <h2 class="motion-fade text-2xl font-bold tracking-wider" style="color: rgb(201, 169, 110); font-weight: 700;">AURUM</h2>
+    <div class="flex gap-8">
+     <a href="#products" class="motion-fade text-sm uppercase tracking-widest hover:opacity-70 transition-opacity" style="color: rgb(255, 255, 255); font-weight: 500;">Shop</a>
+     <a href="#about" class="motion-fade text-sm uppercase tracking-widest hover:opacity-70 transition-opacity" style="color: rgb(255, 255, 255); font-weight: 500;">About</a>
+    </div>
+   </nav>
+   <!-- Hero -->
+   <div class="relative w-full" style="height: 85vh;">
+    <img class="w-full h-full object-cover" src="https://images.pexels.com/photos/30790460/pexels-photo-30790460.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1920" alt="Elegant living space featuring pink velvet chairs and gold accents in a modern classic interior">
+    <div class="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-center px-4">
+     <h1 class="motion-fade hero-item text-5xl md:text-7xl font-bold mb-4" style="color: rgb(255, 255, 255);">Elevate Your Space</h1>
+     <p class="motion-fade hero-item text-lg md:text-xl mb-8 max-w-xl" style="color: rgb(232, 224, 212);">Curated luxury pieces for discerning homes</p>
+     <a href="#products" class="motion-fade hero-item inline-block px-10 py-4 text-sm uppercase tracking-widest border-2 hover:bg-white/10 transition-colors" style="color: rgb(201, 169, 110); font-weight: 600; border-color: rgb(201, 169, 110);">Explore Collection</a>
+    </div>
+   </div>
+  </header>
+  <main>
+   <!-- Products -->
+   <section id="products" class="py-20 px-6 md:px-12">
+    <h2 class="motion-fade reveal text-3xl md:text-4xl text-center mb-16" style="color: rgb(255, 255, 255); font-weight: 700;">The Collection</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+     <div class="product-card motion-fade reveal rounded-lg overflow-hidden" style="background: rgb(37, 37, 37);">
+      <img class="w-full h-72 object-cover" loading="lazy" src="https://images.pexels.com/photos/27781350/pexels-photo-27781350.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Warm elegant table lamp casting a soft glow">
+      <div class="p-5">
+       <h3 class="text-lg mb-1" style="color: rgb(255, 255, 255); font-weight: 500;">Aurelia Table Lamp</h3>
+       <p class="text-sm" style="color: rgb(201, 169, 110); font-weight: 600;">$485</p>
+      </div>
+     </div>
+     <div class="product-card motion-fade reveal rounded-lg overflow-hidden" style="background: rgb(37, 37, 37);">
+      <img class="w-full h-72 object-cover" loading="lazy" src="https://images.pexels.com/photos/9316201/pexels-photo-9316201.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Elegant velvet cushions with decorative tassels">
+      <div class="p-5">
+       <h3 class="text-lg mb-1" style="color: rgb(255, 255, 255); font-weight: 500;">Velvet Tassel Cushion</h3>
+       <p class="text-sm" style="color: rgb(201, 169, 110); font-weight: 600;">$195</p>
+      </div>
+     </div>
+     <div class="product-card motion-fade reveal rounded-lg overflow-hidden" style="background: rgb(37, 37, 37);">
+      <img class="w-full h-72 object-cover" loading="lazy" src="https://images.pexels.com/photos/4207780/pexels-photo-4207780.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Decorative golden leaves in unique formed white vase on marble table">
+      <div class="p-5">
+       <h3 class="text-lg mb-1" style="color: rgb(255, 255, 255); font-weight: 500;">Marble Leaf Vase</h3>
+       <p class="text-sm" style="color: rgb(201, 169, 110); font-weight: 600;">$320</p>
+      </div>
+     </div>
+     <div class="product-card motion-fade reveal rounded-lg overflow-hidden" style="background: rgb(37, 37, 37);">
+      <img class="w-full h-72 object-cover" loading="lazy" src="https://images.pexels.com/photos/36286488/pexels-photo-36286488.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Stylish scene of a soy wax candle, gold jewelry, and fabric on wood">
+      <div class="p-5">
+       <h3 class="text-lg mb-1" style="color: rgb(255, 255, 255); font-weight: 500;">Noir &amp; Gold Candle</h3>
+       <p class="text-sm" style="color: rgb(201, 169, 110); font-weight: 600;">$145</p>
+      </div>
+     </div>
+     <div class="product-card motion-fade reveal rounded-lg overflow-hidden" style="background: rgb(37, 37, 37);">
+      <img class="w-full h-72 object-cover" loading="lazy" src="https://images.pexels.com/photos/707580/pexels-photo-707580.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Two abstract circular paintings with gold frames on a white wall">
+      <div class="p-5">
+       <h3 class="text-lg mb-1" style="color: rgb(255, 255, 255); font-weight: 500;">Abstract Gold Diptych</h3>
+       <p class="text-sm" style="color: rgb(201, 169, 110); font-weight: 600;">$890</p>
+      </div>
+     </div>
+     <div class="product-card motion-fade reveal rounded-lg overflow-hidden" style="background: rgb(37, 37, 37);">
+      <img class="w-full h-72 object-cover" loading="lazy" src="https://images.pexels.com/photos/31203862/pexels-photo-31203862.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Elegantly crafted handmade pottery bowls with a metallic finish">
+      <div class="p-5">
+       <h3 class="text-lg mb-1" style="color: rgb(255, 255, 255); font-weight: 500;">Artisan Bronze Bowl</h3>
+       <p class="text-sm" style="color: rgb(201, 169, 110); font-weight: 600;">$265</p>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- About -->
+   <section id="about" class="py-20 px-6 md:px-12">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+     <img class="motion-fade reveal w-full h-96 object-cover rounded-lg" loading="lazy" src="https://images.pexels.com/photos/27410076/pexels-photo-27410076.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1280" alt="Modern display cabinet showcasing elegant artifacts in a well-lit room">
+     <div class="motion-fade reveal">
+      <h2 class="text-3xl md:text-4xl mb-6" style="color: rgb(255, 255, 255); font-weight: 700;">Crafted for the Extraordinary</h2>
+      <p class="text-base leading-relaxed" style="color: rgb(176, 169, 153);">At Aurum, we believe your home should reflect the richness of your taste. Each piece in our collection is sourced from master artisans around the world — designed to transform spaces into sanctuaries of elegance.</p>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="py-12 px-6 border-t border-white/10">
+   <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 mb-8">
+    <div class="motion-fade reveal">
+     <h3 class="text-lg font-bold mb-4" style="color: rgb(201, 169, 110); font-weight: 700;">Visit Us</h3>
+     <div class="h-64 rounded-lg overflow-hidden"><iframe src="https://www.google.com/maps/dir//Cozy+Luxury+Decor,+Owoo+Plastic+St,+Accra/@5.6352415,-0.2150885,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0xfdf9b94006041df:0x51435c751cb1200!2m2!1d-0.2167855!2d5.6371018?entry=ttu&amp;g_ep=EgoyMDI2MDYyOC4wIKXMDSoASAFQAw%3D%3D" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map to Cozy Luxury Decor, Owoo Plastic St, Accra"></iframe>
+     </div>
+    </div>
+    <div class="motion-fade reveal">
+     <h3 class="text-lg font-bold mb-6" style="color: rgb(201, 169, 110); font-weight: 700;">Follow Us</h3>
+     <div class="flex flex-col gap-4">
+      <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 hover:opacity-70 transition-opacity" style="color: rgb(201, 169, 110);">WhatsApp</a>
+      <a href="https://web.facebook.com/profile.php?id=" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 hover:opacity-70 transition-opacity" style="color: rgb(201, 169, 110);">Facebook</a>
+      <a href="https://www.tiktok.com/@cozy_luxury_decor?is_from_webapp=1&amp;sender_device=pc" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 hover:opacity-70 transition-opacity" style="color: rgb(201, 169, 110);">TikTok</a>
+     </div>
+    </div>
+   </div>
+   <div class="text-center border-t border-white/10 pt-8">
+    <p class="text-sm" style="color: rgb(102, 102, 102);">© 2026 Aurum Decor. All rights reserved.</p>
+   </div>
+  </footer>
+  <script>
+  (function () {
+    var showAll = function () {
+      document.querySelectorAll('.motion-fade').forEach(function (el) { el.style.opacity = 1; });
+    };
+    var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!window.Motion || reduced) { showAll(); return; }
+
+    var animate = Motion.animate, inView = Motion.inView, stagger = Motion.stagger;
+
+    // Nav + hero entrance
+    animate('nav .motion-fade',
+      { opacity: [0, 1], transform: ['translateY(-12px)', 'translateY(0)'] },
+      { duration: 0.8, delay: stagger(0.12), easing: 'ease-out' });
+    animate('.hero-item',
+      { opacity: [0, 1], transform: ['translateY(28px)', 'translateY(0)'] },
+      { duration: 0.9, delay: stagger(0.18, { start: 0.25 }), easing: [0.22, 1, 0.36, 1] });
+
+    // Scroll-triggered reveals for headings, cards, about and footer blocks
+    inView('.reveal', function (info) {
+      animate(info.target,
+        { opacity: [0, 1], transform: ['translateY(32px)', 'translateY(0)'] },
+        { duration: 0.7, easing: [0.22, 1, 0.36, 1] });
+    }, { margin: '0px 0px -80px 0px' });
+  })();
+  </script>
+ </body>
+</html>
