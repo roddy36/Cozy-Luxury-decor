@@ -174,9 +174,22 @@ footer{border-top:1px solid rgba(217,164,65,.18);padding:56px 0 40px;background:
 .foot-map{min-width:240px;max-width:320px;flex:1 1 260px}
 .foot-map .eyebrow{display:block;margin-bottom:12px}
 .foot-map-frame{
+  position:relative;
   height:160px;border-radius:var(--radius-arch);overflow:hidden;
   border:1px solid rgba(217,164,65,.3);background:var(--umber);
 }
+.map-cta{
+  position:absolute;left:50%;bottom:12px;transform:translateX(-50%);
+  z-index:2;
+  display:inline-flex;align-items:center;gap:6px;
+  background:rgba(28,18,10,.85);backdrop-filter:blur(6px);
+  border:1px solid rgba(217,164,65,.5);
+  color:var(--gold-soft);font-size:12px;font-weight:600;
+  padding:7px 14px;border-radius:100px;
+  transition:background .18s ease,color .18s ease;
+}
+.map-cta svg{width:14px;height:14px}
+.map-cta:hover{background:var(--gold);color:#2A1B08}
 .legal{margin-top:40px;font-size:12px;color:rgba(203,184,158,.5);text-align:center}
 
 /* floating whatsapp */
@@ -217,7 +230,7 @@ footer{border-top:1px solid rgba(217,164,65,.18);padding:56px 0 40px;background:
       <a href="#about">About</a>
       <a href="#order">How to order</a>
     </nav>
-    <a class="btn motion-fade nav-item" href="https://wa.me/233000000000?text=Hello%20Cozy%20Luxury%20Decor%2C%20I%27d%20like%20to%20place%20an%20order" target="_blank" rel="noopener">
+    <a class="btn motion-fade nav-item" href="https://wa.me/2330509390158?text=Hello%20Cozy%20Luxury%20Decor%2C%20I%27d%20like%20to%20place%20an%20order" target="_blank" rel="noopener">
       <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.7.8-.8 1-.1.2-.3.2-.6.1a6.8 6.8 0 0 1-3.3-2.9c-.3-.4 0-.6.2-.8l.4-.5c.1-.2.1-.3 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.9.9-1.2 2.2-.2 3.9a12 12 0 0 0 4.6 4.3c1.7.8 2.4.8 3.2.7.6-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.2-.1-.4-.2Z"/></svg>
       Order now
     </a>
@@ -264,7 +277,7 @@ footer{border-top:1px solid rgba(217,164,65,.18);padding:56px 0 40px;background:
         <span class="eyebrow">The collection</span>
         <h2>Pieces that finish the room</h2>
       </div>
-      <a class="btn btn-ghost" href="https://wa.me/233000000000?text=Hello%2C%20please%20send%20me%20the%20full%20Cozy%20Luxury%20Decor%20catalogue" target="_blank" rel="noopener">Request full catalogue</a>
+      <a class="btn btn-ghost" href="https://wa.me/2330509390158?text=Hello%2C%20please%20send%20me%20the%20full%20Cozy%20Luxury%20Decor%20catalogue" target="_blank" rel="noopener">Request full catalogue</a>
     </div>
     <div class="grid">
       <article class="card motion-fade reveal">
@@ -274,7 +287,7 @@ footer{border-top:1px solid rgba(217,164,65,.18);padding:56px 0 40px;background:
           <p class="desc">A sculptural metal accent for consoles, shelves and centre tables.</p>
           <div class="price-row">
             <span class="price">GH₵ 350</span>
-            <a class="order" href="https://wa.me/233000000000?text=Hello%2C%20I%27d%20like%20to%20order%20the%20Hammered%20Gold%20Pear" target="_blank" rel="noopener">Order on WhatsApp</a>
+            <a class="order" href="https://wa.me/2330509390158?text=Hello%2C%20I%27d%20like%20to%20order%20the%20Hammered%20Gold%20Pear" target="_blank" rel="noopener">Order on WhatsApp</a>
           </div>
         </div>
       </article>
@@ -285,7 +298,7 @@ footer{border-top:1px solid rgba(217,164,65,.18);padding:56px 0 40px;background:
           <p class="desc">Warm scented candles in gold vessels, sold as a set of two.</p>
           <div class="price-row">
             <span class="price">GH₵ 280</span>
-            <a class="order" href="https://wa.me/233000000000?text=Hello%2C%20I%27d%20like%20to%20order%20the%20Amber%20Glow%20Candle%20Set" target="_blank" rel="noopener">Order on WhatsApp</a>
+            <a class="order" href="https://wa.me/2330509390158?text=Hello%2C%20I%27d%20like%20to%20order%20the%20Amber%20Glow%20Candle%20Set" target="_blank" rel="noopener">Order on WhatsApp</a>
           </div>
         </div>
       </article>
@@ -296,7 +309,7 @@ footer{border-top:1px solid rgba(217,164,65,.18);padding:56px 0 40px;background:
           <p class="desc">Rust, gold and cream velvet cushions that lift any sofa instantly.</p>
           <div class="price-row">
             <span class="price">GH₵ 180</span>
-            <a class="order" href="https://wa.me/233000000000?text=Hello%2C%20I%27d%20like%20to%20order%20the%20Velvet%20Accent%20Cushions" target="_blank" rel="noopener">Order on WhatsApp</a>
+            <a class="order" href="https://wa.me/2330509390158?text=Hello%2C%20I%27d%20like%20to%20order%20the%20Velvet%20Accent%20Cushions" target="_blank" rel="noopener">Order on WhatsApp</a>
           </div>
         </div>
       </article>
@@ -307,7 +320,7 @@ footer{border-top:1px solid rgba(217,164,65,.18);padding:56px 0 40px;background:
           <p class="desc">A clean sculptural vase for pampas, stems or standing alone.</p>
           <div class="price-row">
             <span class="price">GH₵ 240</span>
-            <a class="order" href="https://wa.me/233000000000?text=Hello%2C%20I%27d%20like%20to%20order%20the%20Ceramic%20Table%20Vase" target="_blank" rel="noopener">Order on WhatsApp</a>
+            <a class="order" href="https://wa.me/2330509390158?text=Hello%2C%20I%27d%20like%20to%20order%20the%20Ceramic%20Table%20Vase" target="_blank" rel="noopener">Order on WhatsApp</a>
           </div>
         </div>
       </article>
@@ -318,7 +331,7 @@ footer{border-top:1px solid rgba(217,164,65,.18);padding:56px 0 40px;background:
           <p class="desc">A statement wall mirror that opens up hallways and living rooms.</p>
           <div class="price-row">
             <span class="price">GH₵ 520</span>
-            <a class="order" href="https://wa.me/233000000000?text=Hello%2C%20I%27d%20like%20to%20order%20the%20Gold%20Frame%20Mirror" target="_blank" rel="noopener">Order on WhatsApp</a>
+            <a class="order" href="https://wa.me/2330509390158?text=Hello%2C%20I%27d%20like%20to%20order%20the%20Gold%20Frame%20Mirror" target="_blank" rel="noopener">Order on WhatsApp</a>
           </div>
         </div>
       </article>
@@ -329,7 +342,7 @@ footer{border-top:1px solid rgba(217,164,65,.18);padding:56px 0 40px;background:
           <p class="desc">Long lasting home fragrance in a vessel worth displaying.</p>
           <div class="price-row">
             <span class="price">GH₵ 200</span>
-            <a class="order" href="https://wa.me/233000000000?text=Hello%2C%20I%27d%20like%20to%20order%20the%20Reed%20Diffuser%20Set" target="_blank" rel="noopener">Order on WhatsApp</a>
+            <a class="order" href="https://wa.me/2330509390158?text=Hello%2C%20I%27d%20like%20to%20order%20the%20Reed%20Diffuser%20Set" target="_blank" rel="noopener">Order on WhatsApp</a>
           </div>
         </div>
       </article>
@@ -384,21 +397,26 @@ footer{border-top:1px solid rgba(217,164,65,.18);padding:56px 0 40px;background:
     <nav class="foot-links motion-fade reveal" aria-label="Footer">
       <a href="#shop">Shop the collection</a>
       <a href="#about">Our story</a>
-      <a href="https://wa.me/233000000000" target="_blank" rel="noopener">WhatsApp us</a>
-      <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
-      <a href="https://www.tiktok.com/@cozy_luxury_decor?is_from_webapp=1&amp;sender_device=pc" target="_blank" rel="noopener">TikTok</a>
+      <a href="https://wa.me/2330509390158" target="_blank" rel="noopener">WhatsApp us</a>
+      <a href="https://www.instagram.com/cozy_luxury_decor" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://web.facebook.com/profile.php?id=61591652094503" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.tiktok.com/@cozyluxurydecor1" target="_blank" rel="noopener">TikTok</a>
     </nav>
     <div class="foot-map motion-fade reveal">
       <span class="eyebrow">Visit us</span>
       <div class="foot-map-frame">
         <iframe src="https://www.google.com/maps/dir//Cozy+Luxury+Decor,+Owoo+Plastic+St,+Accra/@5.6352415,-0.2150885,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0xfdf9b94006041df:0x51435c751cb1200!2m2!1d-0.2167855!2d5.6371018?entry=ttu&amp;g_ep=EgoyMDI2MDYyOC4wIKXMDSoASAFQAw%3D%3D" width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map to Cozy Luxury Decor, Owoo Plastic St, Accra"></iframe>
+        <a class="map-cta" href="https://share.google/Tqah0Iw4HmqmNgKMn" target="_blank" rel="noopener" aria-label="View our Google Business profile">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C7.6 2 4 5.6 4 10c0 5.4 6.6 11.4 7.1 11.9.5.5 1.3.5 1.8 0C13.4 21.4 20 15.4 20 10c0-4.4-3.6-8-8-8Zm0 10.5A2.5 2.5 0 1 1 12 7.5a2.5 2.5 0 0 1 0 5Z"/></svg>
+          View on Google
+        </a>
       </div>
     </div>
   </div>
   <p class="legal">© 2026 Cozy Luxury Decor · Accra, Ghana</p>
 </footer>
 
-<a class="wa-float" href="https://wa.me/233000000000?text=Hello%20Cozy%20Luxury%20Decor" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+<a class="wa-float" href="https://wa.me/2330509390158?text=Hello%20Cozy%20Luxury%20Decor" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.7.8-.8 1-.1.2-.3.2-.6.1a6.8 6.8 0 0 1-3.3-2.9c-.3-.4 0-.6.2-.8l.4-.5c.1-.2.1-.3 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.9.9-1.2 2.2-.2 3.9a12 12 0 0 0 4.6 4.3c1.7.8 2.4.8 3.2.7.6-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.2-.1-.4-.2Z"/></svg>
 </a>
 
