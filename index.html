@@ -169,27 +169,11 @@ footer{border-top:1px solid rgba(217,164,65,.18);padding:56px 0 40px;background:
 .foot-grid{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;align-items:start}
 .foot-grid .logo{font-size:24px;margin-bottom:10px}
 .foot-grid p{font-size:14px;color:var(--cream-dim);max-width:34ch}
-.foot-links{display:flex;flex-direction:column;gap:8px;font-size:14px;color:var(--cream-dim)}
+.foot-links{display:flex;flex-direction:column;gap:12px;font-size:14px;color:var(--cream-dim)}
+.foot-links-head{margin-bottom:2px}
+.foot-links a{display:flex;align-items:center;gap:10px}
 .foot-links a:hover{color:var(--gold-soft)}
-.foot-map{min-width:240px;max-width:320px;flex:1 1 260px}
-.foot-map .eyebrow{display:block;margin-bottom:12px}
-.foot-map-frame{
-  position:relative;
-  height:160px;border-radius:var(--radius-arch);overflow:hidden;
-  border:1px solid rgba(217,164,65,.3);background:var(--umber);
-}
-.map-cta{
-  position:absolute;left:50%;bottom:12px;transform:translateX(-50%);
-  z-index:2;
-  display:inline-flex;align-items:center;gap:6px;
-  background:rgba(28,18,10,.85);backdrop-filter:blur(6px);
-  border:1px solid rgba(217,164,65,.5);
-  color:var(--gold-soft);font-size:12px;font-weight:600;
-  padding:7px 14px;border-radius:100px;
-  transition:background .18s ease,color .18s ease;
-}
-.map-cta svg{width:14px;height:14px}
-.map-cta:hover{background:var(--gold);color:#2A1B08}
+.foot-links svg{width:16px;height:16px;flex-shrink:0}
 .legal{margin-top:40px;font-size:12px;color:rgba(203,184,158,.5);text-align:center}
 
 /* floating whatsapp */
@@ -395,23 +379,28 @@ footer{border-top:1px solid rgba(217,164,65,.18);padding:56px 0 40px;background:
       <p>Home and lifestyle pieces, curated in Accra. Delivery across Accra and beyond.</p>
     </div>
     <nav class="foot-links motion-fade reveal" aria-label="Footer">
-      <a href="#shop">Shop the collection</a>
-      <a href="#about">Our story</a>
-      <a href="https://wa.me/2330509390158" target="_blank" rel="noopener">WhatsApp us</a>
-      <a href="https://www.instagram.com/cozy_luxury_decor" target="_blank" rel="noopener">Instagram</a>
-      <a href="https://web.facebook.com/profile.php?id=61591652094503" target="_blank" rel="noopener">Facebook</a>
-      <a href="https://www.tiktok.com/@cozyluxurydecor1" target="_blank" rel="noopener">TikTok</a>
+      <span class="eyebrow foot-links-head">Contact us</span>
+      <a href="https://wa.me/2330509390158" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.7.8-.8 1-.1.2-.3.2-.6.1a6.8 6.8 0 0 1-3.3-2.9c-.3-.4 0-.6.2-.8l.4-.5c.1-.2.1-.3 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.9.9-1.2 2.2-.2 3.9a12 12 0 0 0 4.6 4.3c1.7.8 2.4.8 3.2.7.6-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.2-.1-.4-.2Z"/></svg>
+        WhatsApp us
+      </a>
+      <a href="https://www.instagram.com/cozy_luxury_decor" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+        Instagram
+      </a>
+      <a href="https://web.facebook.com/profile.php?id=61591652094503" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg>
+        Facebook
+      </a>
+      <a href="https://www.tiktok.com/@cozyluxurydecor1" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.6 5.82c-1.12-1.08-1.67-2.64-1.75-4.17h-3.9v14.14c0 1.79-1.44 3.24-3.23 3.24-1.79 0-3.24-1.45-3.24-3.24 0-1.79 1.45-3.24 3.24-3.24.32 0 .63.05.92.13v-3.94c-.3-.04-.6-.06-.92-.06-3.96 0-7.17 3.21-7.17 7.17 0 3.96 3.21 7.17 7.17 7.17 3.96 0 7.17-3.21 7.17-7.17V9.4c1.31.94 2.92 1.49 4.66 1.49V6.86c-1.06-.03-2.03-.4-2.95-1.04z"/></svg>
+        TikTok
+      </a>
+      <a href="https://share.google/Tqah0Iw4HmqmNgKMn" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C7.6 2 4 5.6 4 10c0 5.4 6.6 11.4 7.1 11.9.5.5 1.3.5 1.8 0C13.4 21.4 20 15.4 20 10c0-4.4-3.6-8-8-8Zm0 10.5A2.5 2.5 0 1 1 12 7.5a2.5 2.5 0 0 1 0 5Z"/></svg>
+        Google Maps
+      </a>
     </nav>
-    <div class="foot-map motion-fade reveal">
-      <span class="eyebrow">Visit us</span>
-      <div class="foot-map-frame">
-        <iframe src="https://www.google.com/maps/dir//Cozy+Luxury+Decor,+Owoo+Plastic+St,+Accra/@5.6352415,-0.2150885,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0xfdf9b94006041df:0x51435c751cb1200!2m2!1d-0.2167855!2d5.6371018?entry=ttu&amp;g_ep=EgoyMDI2MDYyOC4wIKXMDSoASAFQAw%3D%3D" width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map to Cozy Luxury Decor, Owoo Plastic St, Accra"></iframe>
-        <a class="map-cta" href="https://share.google/Tqah0Iw4HmqmNgKMn" target="_blank" rel="noopener" aria-label="View our Google Business profile">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C7.6 2 4 5.6 4 10c0 5.4 6.6 11.4 7.1 11.9.5.5 1.3.5 1.8 0C13.4 21.4 20 15.4 20 10c0-4.4-3.6-8-8-8Zm0 10.5A2.5 2.5 0 1 1 12 7.5a2.5 2.5 0 0 1 0 5Z"/></svg>
-          View on Google
-        </a>
-      </div>
-    </div>
   </div>
   <p class="legal">© 2026 Cozy Luxury Decor · Accra, Ghana</p>
 </footer>
