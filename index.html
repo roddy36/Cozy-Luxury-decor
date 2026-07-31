@@ -201,6 +201,37 @@ footer{border-top:1px solid rgba(217,164,65,.18);padding:56px 0 40px;background:
   *{transition:none !important;scroll-behavior:auto}
 }
 .js .motion-fade{opacity:0}
+
+/* best sellers (light hero) */
+.bestsellers{background:#F7F4EE;color:#1a1a1a;font-family:'Outfit',sans-serif}
+.bs-nav{max-width:1320px;margin:0 auto;padding:18px 22px;display:flex;align-items:center;gap:24px;border-bottom:1px solid rgba(0,0,0,.08);flex-wrap:wrap}
+.bs-cats{display:flex;gap:24px;flex:1;flex-wrap:wrap;font-size:13px;letter-spacing:.09em;text-transform:uppercase;font-weight:500}
+.bs-cats a{color:#2a2a2a;transition:color .18s}
+.bs-cats a:hover{color:#b58a3d}
+.bs-search{display:flex;align-items:center;gap:8px;border:1px solid rgba(0,0,0,.16);border-radius:100px;padding:9px 16px;background:#fff;min-width:230px}
+.bs-search input{border:0;outline:0;background:transparent;font:inherit;font-size:14px;flex:1;color:#1a1a1a}
+.bs-search svg{width:18px;height:18px;fill:#1a1a1a;opacity:.55;flex-shrink:0}
+.bs-hero{max-width:1320px;margin:0 auto;padding:34px 22px 64px}
+.bs-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:26px}
+.bs-title{font-family:'Fraunces',Georgia,serif;font-weight:400;font-size:clamp(52px,8.5vw,116px);line-height:.9;letter-spacing:-.015em;color:#1a1a1a}
+.bs-title em{font-style:italic}
+.bs-shop{display:inline-flex;align-items:center;gap:8px;background:#1a1a1a;color:#F7F4EE;font-weight:600;font-size:14px;padding:12px 26px;border-radius:100px;transition:background .18s,transform .18s}
+.bs-shop:hover{background:#b58a3d;transform:translateY(-1px)}
+.bs-collage{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:158px;gap:14px;grid-auto-flow:dense}
+.bs-collage figure{margin:0;border-radius:12px;overflow:hidden;background:#ebe5da}
+.bs-collage img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
+.bs-collage figure:hover img{transform:scale(1.06)}
+.bs-collage .wide{grid-column:span 2}
+.bs-collage .tall{grid-row:span 2}
+.bs-collage .big{grid-column:span 2;grid-row:span 2}
+@media (max-width:820px){
+  .bs-cats{order:2;width:100%}
+  .bs-collage{grid-template-columns:repeat(4,1fr);grid-auto-rows:130px}
+}
+@media (max-width:560px){
+  .bs-collage{grid-template-columns:repeat(2,1fr);grid-auto-rows:130px}
+  .bs-collage .big{grid-column:span 2}
+}
 </style>
 <script>document.documentElement.classList.add('js');</script>
 </head>
@@ -223,23 +254,40 @@ footer{border-top:1px solid rgba(217,164,65,.18);padding:56px 0 40px;background:
 
 <main id="top">
 
-<section class="hero">
-  <div class="hero-glow"></div>
-  <div class="wrap hero-grid">
-    <div>
-      <span class="eyebrow motion-fade hero-item">Home &amp; lifestyle · Accra</span>
-      <h1 class="motion-fade hero-item">Make every corner feel <em>like home.</em></h1>
-      <p class="motion-fade hero-item">Statement pieces, gold accents and warm finishing touches, hand picked for beautiful Ghanaian homes. Browse the collection and order in one WhatsApp message.</p>
-      <div class="hero-ctas motion-fade hero-item">
-        <a class="btn" href="#shop">Shop the collection</a>
-        <a class="btn btn-ghost" href="#order">How ordering works</a>
-      </div>
+<section class="bestsellers">
+  <nav class="bs-nav" aria-label="Shop categories">
+    <div class="bs-cats motion-fade reveal">
+      <a href="#shop">Furniture</a>
+      <a href="#shop">Decor</a>
+      <a href="#shop">Lighting</a>
+      <a href="#shop">Kitchen &amp; Bath</a>
+      <a href="#shop">Outdoor</a>
+      <a href="#shop">New</a>
+      <a href="#shop">Sale</a>
     </div>
-    <div>
-      <div class="arch motion-fade hero-item">
-        <img src="assets/Images/IMG_1221-600x667.webp" alt="Golden Knot Sculpture, a hand finished brass knot sculpture on a shelf" width="600" height="750" loading="eager">
-      </div>
-      <p class="hero-note motion-fade hero-item">The Golden Knot Sculpture — this season's favourite</p>
+    <form class="bs-search motion-fade reveal" role="search" onsubmit="return false">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 20.3l-4.4-4.4a7.5 7.5 0 1 0-.7.7l4.4 4.4ZM5 10.5a5.5 5.5 0 1 1 5.5 5.5A5.5 5.5 0 0 1 5 10.5Z"/></svg>
+      <input type="search" placeholder="Search the collection" aria-label="Search products">
+    </form>
+  </nav>
+  <div class="bs-hero">
+    <div class="bs-head">
+      <h1 class="bs-title motion-fade reveal">Best Sellers</h1>
+      <a class="bs-shop motion-fade reveal" href="#shop">Shop the collection</a>
+    </div>
+    <div class="bs-collage motion-fade reveal">
+      <figure class="tall"><img src="assets/Images/2-03-1203123-384x528.jpg" alt="Faux banana tree in a ribbed pot" loading="eager"></figure>
+      <figure class="big"><img src="assets/Images/31023-09123-384x528.jpg" alt="LED wave pendant light over a kitchen island" loading="eager"></figure>
+      <figure><img src="assets/Images/21-800x1091-384x528.jpg" alt="Macrame fringe cushion" loading="lazy"></figure>
+      <figure><img src="assets/Images/ee876c8f0c5b30705c06959d4f66fde0_LUX7434_1_3450-410de2d0-4006-488c-8a35-8e5ab2ba8670-460x460.jpeg" alt="Noir marble console table" loading="lazy"></figure>
+      <figure><img src="assets/Images/3-0123-0912-03213-384x528.jpg" alt="LED ring chandelier" loading="lazy"></figure>
+      <figure class="tall"><img src="assets/Images/3-012-30-120312-384x528.jpg" alt="Faux fiddle-leaf fig tree" loading="lazy"></figure>
+      <figure><img src="assets/Images/hegfrjh-384x528.jpg" alt="Set of two emerald ceramic vases" loading="lazy"></figure>
+      <figure class="wide"><img src="assets/Images/FFF-800x1091-384x528.jpg" alt="Gold X-frame pedestal stand" loading="lazy"></figure>
+      <figure><img src="assets/Images/23-800x1091-384x528.jpg" alt="Gold cage vase trio" loading="lazy"></figure>
+      <figure><img src="assets/Images/IMG_1221-600x667.webp" alt="Golden knot sculpture" loading="lazy"></figure>
+      <figure><img src="assets/Images/83-800x1091-384x528.jpg" alt="Gold tower plant stand" loading="lazy"></figure>
+      <figure><img src="assets/Images/sdpasdasd-800x1091.jpg" alt="Gold mirror vanity tray" loading="lazy"></figure>
     </div>
   </div>
 </section>
